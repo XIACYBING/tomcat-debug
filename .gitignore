@@ -1,0 +1,17 @@
+# 配置文件排除
+.idea/
+
+# 日志排除
+/catalina-home/logs
+
+# 排除webapps文件夹下除docs、examples、host-manager、manager、META-INF和ROOT外的，其他项目文件夹
+/catalina-home/webapps/*
+!/catalina-home/webapps/docs
+!/catalina-home/webapps/examples
+!/catalina-home/webapps/host-manager
+!/catalina-home/webapps/manager
+!/catalina-home/webapps/META-INF
+!/catalina-home/webapps/ROOT
+
+# 任意模块下的target目录
+*/target
