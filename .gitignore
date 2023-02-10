@@ -13,5 +13,8 @@
 !/catalina-home/webapps/META-INF
 !/catalina-home/webapps/ROOT
 
+# work目录不提交
+/catalina-home/work
+
 # 任意模块下的target目录
 */target
