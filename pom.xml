@@ -11,5 +11,6 @@
 
   <modules>
     <module>tomcat</module>
+    <module>source-web-module</module>
   </modules>
 </project>

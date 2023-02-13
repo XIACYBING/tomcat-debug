@@ -204,6 +204,7 @@ Error: A fatal exception has occurred. Program will exit.
 * 在配置编辑页出现的`Before launch:`栏，点击`+`号，添加以下两个任务：
   * 在出现的`Add New Task`弹窗中选择`Build Artifacts`，勾选新建好的`source-web-module:war exploded printWebApps`，该任务的目的是将在执行`org.apache.catalina.startup.Bootstrap.main`函数之前，编译`source-web-module`模块，并将生成的内容输出到`catalina-home`下的`webapps`目录下
   * 在出现的`Add New Task`弹窗中选择`Run Maven Goal`，在出现的`Select Maven Goal`弹窗中的`Command line`栏中，输入`compile -pl tomcat`，该任务的目的是重新编译修改了的`tomcat`代码（即`Tomcat`的源码），该步骤应该可以通过配置`tomcat`的`pom.xml`文件来替代，具体怎么处理还需要研究
+    * 在选择`Add before launch task`时，本身会有一个`Build`任务，该任务的目的是构建当前项目，和`compile -pl tomcat`效果一致，所以按需使用即可 
 * 运行`org.apache.catalina.startup.Bootstrap.main`函数，访问`http://localhost:8080/source-web-module/index.jsp` ，有出现`Hello World!`即说明`Tomcat`访问成功，项目部署成功，此时就可以通过`IDEA`的`DEBUG`模式去调试`Tomcat`的代码了
 
 # 参考

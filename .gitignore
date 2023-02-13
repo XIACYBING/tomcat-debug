@@ -1,5 +1,6 @@
 # 配置文件排除
 .idea/
+*.iml
 
 # 日志排除
 /catalina-home/logs
