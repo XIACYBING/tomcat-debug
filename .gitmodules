@@ -1,3 +1,4 @@
 [submodule "tomcat"]
 	path = tomcat
 	url = https://github.com/XIACYBING/tomcat.git
+	branch = 8.5.20-tomcatDebug
