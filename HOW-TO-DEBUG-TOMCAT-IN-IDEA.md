@@ -156,6 +156,10 @@
 -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
 -Djava.util.logging.config.file=catalina-home/conf/logging.properties
 ```
+* 如果因为国际化设置而出现中文乱码问题，可以考虑修改为英文，或设置控制台输出为`UTF-8`
+```
+-Duser.language=en
+```
 * 打开`Project Structure -> Project`，确保`SDK`为`1.8`版本，此处只实验过`16`版本，会报错
 ```
 -Djava.endorsed.dirs=catalina-home/endorsed is not supported. Endorsed standards and standalone APIs
